@@ -1,17 +1,10 @@
-import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity, SafeAreaView, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity, SafeAreaView, Dimensions  } from 'react-native';
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { Link } from 'expo-router';
+import Course from '../courses';
 
 const { width } = Dimensions.get('window');
-
-const categories = [
-  { title: 'Sports', questions: 50, icon: require('@/assets/images/sports.png'), color: '#FF7A59' },
-  { title: 'Chemistry', questions: 30, icon: require('@/assets/images/chemistry.png'), color: '#4ECDC4' },
-  { title: 'Math', questions: 95, icon: require('@/assets/images/maths.png'), color: '#6C63FF' },
-  { title: 'History', questions: 128, icon: require('@/assets/images/history.png'), color: '#FFD166' },
-  { title: 'Biology', questions: 80, icon: require('@/assets/images/biology.png'), color: '#83C5BE' },
-  { title: 'Geography', questions: 60, icon: require('@/assets/images/geography.png'), color: '#E29578' },
-];
 
 const Index = () => {
   const now = new Date();
@@ -56,26 +49,17 @@ const Index = () => {
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Categories</Text>
           <TouchableOpacity style={styles.seeAllButton}>
-            <Text style={styles.seeAllText}>See All</Text>
-            <Ionicons name="chevron-forward" size={16} color="#555" />
-          </TouchableOpacity>
+  <Link href="/courses">
+    <Text style={styles.seeAllText}>See All</Text>
+  </Link>
+  <Ionicons name="chevron-forward" size={16} color="#555" />
+</TouchableOpacity>
         </View>
 
         {/* Category Grid */}
-        <View style={styles.grid}>
-          {categories.map((item, index) => (
-            <TouchableOpacity key={index} style={[styles.card, { backgroundColor: item.color + '15' }]}>
-              <View style={ { backgroundColor: item.color + '30' }}>
-                <Image source={item.icon} style={styles.cardImage} resizeMode="contain" />
-              </View>
-              <Text style={styles.cardTitle}>{item.title}</Text>
-              <Text style={styles.questionCount}>{item.questions} questions</Text>
-              <View style={styles.playButton}>
-                <Ionicons name="play" size={16} color="#fff" />
-              </View>
-            </TouchableOpacity>
-          ))}
-        </View>
+
+
+         <Course limit={4}/>
 
         {/* Recent Activity */}
         <View style={styles.activityContainer}>
@@ -109,6 +93,8 @@ const Index = () => {
   );
 };
 
+
+
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
@@ -126,7 +112,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '701',
+    fontWeight: '700',
     color: '#333',
   },
   profileButton: {
@@ -196,6 +182,7 @@ const styles = StyleSheet.create({
   },
   card: {
     width: (width - 48) / 2,
+
     padding: 16,
     marginBottom: 16,
     elevation: 2,
