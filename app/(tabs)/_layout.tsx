@@ -3,7 +3,7 @@ import React from 'react';
 import { Platform } from 'react-native';
 
 import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
+import { Ionicons } from '@expo/vector-icons';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -30,28 +30,28 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Profile',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="person-circle-outline" color={color} />,
         }}
       />
       <Tabs.Screen
         name="quiz"
         options={{
           title: 'Quiz',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="trophy-outline" color={color} />,
         }}
       />
             <Tabs.Screen
         name="store"
         options={{
           title: 'Store',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="bag-add-outline" color={color} />,
         }}
       />
             <Tabs.Screen
         name="extras"
         options={{
           title: 'Extras',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="bookmarks-outline" color={color} />,
         }}
       />
     </Tabs>

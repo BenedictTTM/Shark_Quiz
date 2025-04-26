@@ -55,13 +55,13 @@ const Index = () => {
   <Ionicons name="chevron-forward" size={16} color="#555" />
 </TouchableOpacity>
         </View>
+    
+        <View style={{ flex: 1 }}>
+  {/* Category Grid */}
+  <Course limit={4} />
 
-        {/* Category Grid */}
-
-
-         <Course limit={4}/>
-
-        {/* Recent Activity */}
+  {/* Recent Activity */}
+        </View>
         <View style={styles.activityContainer}>
           <Text style={styles.activityTitle}>Recent Activity</Text>
           <View style={styles.activityCard}>
