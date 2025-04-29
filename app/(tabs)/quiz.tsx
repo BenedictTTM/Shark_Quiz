@@ -1,204 +1,209 @@
-import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView, StatusBar, ImageBackground } from 'react-native';
 import React from 'react';
+import { Link } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 
-/**
- * QuizModeScreen Component
- * 
- * This screen allows users to select between Tournament and Practice quiz modes
- * Each mode is represented by a card with relevant information and styling
- */
-const quiz = ({ navigation }) => {
-  
-  // Handle mode selection and navigate to the corresponding quiz screen
-  const handleModeSelection = (mode) => {
-    navigation.navigate('QuizStart', { mode });
-  };
-  
+const Quiz = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#f8f9fa" />
+      <StatusBar barStyle="light-content" />
       
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity 
-          style={styles.backButton}
-          onPress={() => navigation.goBack()}
-        >
-          <Ionicons name="arrow-back" size={24} color="#333" />
-        </TouchableOpacity>
-        <Text style={styles.headerTitle}>Select Mode</Text>
-        <View style={{ width: 24 }} /> {/* Empty view for alignment */}
+        <Text style={styles.headerTitle}>Quiz Mode</Text>
+        <Text style={styles.headerSubtitle}>Choose your challenge</Text>
       </View>
       
-      {/* Description */}
-      <Text style={styles.description}>
-        Choose how you want to challenge yourself today
-      </Text>
-      
-      {/* Mode Selection Cards */}
+      {/* Cards Container */}
       <View style={styles.cardsContainer}>
-        {/* Tournament Mode Card */}
-        <TouchableOpacity 
-          style={styles.card} 
-          onPress={() => handleModeSelection('tournament')}
-          activeOpacity={0.8}
-        >
-          <View style={[styles.iconContainer, { backgroundColor: '#6C63FF20' }]}>
-            <Ionicons name="trophy" size={28} color="#6C63FF" />
-          </View>
-          
-          <Text style={styles.cardTitle}>Tournament Mode</Text>
-          
-          <Text style={styles.cardDescription}>
-            Compete against others with timed questions and climb the leaderboard
-          </Text>
-          
-          <View style={styles.featureRow}>
-            <View style={styles.feature}>
-              <Ionicons name="time-outline" size={16} color="#666" />
-              <Text style={styles.featureText}>Timed</Text>
-            </View>
-            <View style={styles.feature}>
-              <Ionicons name="trophy-outline" size={16} color="#666" />
-              <Text style={styles.featureText}>Ranked</Text>
-            </View>
-          </View>
-          
-          <TouchableOpacity 
-            style={[styles.button, { backgroundColor: '#6C63FF' }]}
-            onPress={() => handleModeSelection('tournament')}
-          >
-            <Text style={styles.buttonText}>Start Tournament</Text>
+        {/* Practice Card */}
+        <Link href="/pract" asChild>
+          <TouchableOpacity style={styles.card}>
+            <LinearGradient
+              colors={['#8B0000', 'rgb(250, 111, 111)']}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.cardGradient}
+            >
+              <View style={styles.cardContent}>
+                <View style={styles.iconContainer}>
+                  <Ionicons name="book" size={28} color="white" />
+                </View>
+                <View style={styles.cardTextContainer}>
+                  <Text style={styles.cardTitle}>Practice</Text>
+                  <Text style={styles.cardDescription}>
+                    Learn at your own pace with explanations
+                  </Text>
+                </View>
+                <View style={styles.arrowContainer}>
+                  <Ionicons name="arrow-forward-circle" size={28} color="white" />
+                </View>
+              </View>
+              
+              <View style={styles.featureContainer}>
+                <View style={styles.feature}>
+                  <Ionicons name="infinite" size={16} color="white" />
+                  <Text style={styles.featureText}>No time limit</Text>
+                </View>
+                <View style={styles.feature}>
+                  <Ionicons name="bulb" size={16} color="white" />
+                  <Text style={styles.featureText}>With hints</Text>
+                </View>
+              </View>
+            </LinearGradient>
           </TouchableOpacity>
-        </TouchableOpacity>
+        </Link>
         
-        {/* Practice Mode Card */}
-        <TouchableOpacity 
-          style={styles.card}
-          onPress={() => handleModeSelection('practice')}
-          activeOpacity={0.8}
-        >
-          <View style={[styles.iconContainer, { backgroundColor: '#4ECDC420' }]}>
-            <Ionicons name="book" size={28} color="#4ECDC4" />
-          </View>
-          
-          <Text style={styles.cardTitle}>Practice Mode</Text>
-          
-          <Text style={styles.cardDescription}>
-            Learn at your own pace with full explanations and unlimited time
-          </Text>
-          
-          <View style={styles.featureRow}>
-            <View style={styles.feature}>
-              <Ionicons name="infinite-outline" size={16} color="#666" />
-              <Text style={styles.featureText}>No time limit</Text>
-            </View>
-            <View style={styles.feature}>
-              <Ionicons name="bulb-outline" size={16} color="#666" />
-              <Text style={styles.featureText}>With hints</Text>
-            </View>
-          </View>
-          
-          <TouchableOpacity 
-            style={[styles.button, { backgroundColor: '#4ECDC4' }]}
-            onPress={() => handleModeSelection('practice')}
-          >
-            <Text style={styles.buttonText}>Start Practice</Text>
+        {/* Tournament Card */}
+        <Link href="/tourn" asChild>
+          <TouchableOpacity style={styles.card}>
+            <LinearGradient
+              colors={['#8B0000', '#FFC837']}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.cardGradient}
+            >
+              <View style={styles.cardContent}>
+                <View style={styles.iconContainer}>
+                  <Ionicons name="trophy" size={28} color="white" />
+                </View>
+                <View style={styles.cardTextContainer}>
+                  <Text style={styles.cardTitle}>Tournament</Text>
+                  <Text style={styles.cardDescription}>
+                    Compete and climb the leaderboard
+                  </Text>
+                </View>
+                <View style={styles.arrowContainer}>
+                  <Ionicons name="arrow-forward-circle" size={28} color="white" />
+                </View>
+              </View>
+              
+              <View style={styles.featureContainer}>
+                <View style={styles.feature}>
+                  <Ionicons name="time" size={16} color="white" />
+                  <Text style={styles.featureText}>Timed challenges</Text>
+                </View>
+                <View style={styles.feature}>
+                  <Ionicons name="people" size={16} color="white" />
+                  <Text style={styles.featureText}>Compete </Text>
+                </View>
+              </View>
+            </LinearGradient>
           </TouchableOpacity>
-        </TouchableOpacity>
+        </Link>
+      </View>
+      
+      {/* Footer */}
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>Select a mode to begin</Text>
       </View>
     </SafeAreaView>
   );
 };
 
-// Styles for the component
+export default Quiz;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f8f9fa',
-    padding: 16,
+    backgroundColor: '#F5F7FF',
+    paddingHorizontal: 20,
+    paddingTop: 20,
   },
   header: {
-    flexDirection: 'row',
+    marginTop: 30,
+    marginBottom: 40,
     alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: 16,
-    paddingTop: 8,
-  },
-  backButton: {
-    padding: 8,
   },
   headerTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#333',
-  },
-  description: {
-    fontSize: 16,
-    color: '#666',
-    marginBottom: 24,
-    textAlign: 'center',
-  },
-  cardsContainer: {
-    flex: 1,
-    justifyContent: 'space-evenly',
-  },
-  card: {
-    backgroundColor: '#fff',
-    borderRadius: 16,
-    padding: 20,
-    marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.05,
-    shadowRadius: 8,
-    elevation: 3,
-  },
-  iconContainer: {
-    width: 48,
-    height: 48,
-    borderRadius: 12,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  cardTitle: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 32,
+    fontWeight: 'bold',
     color: '#333',
     marginBottom: 8,
   },
+  headerSubtitle: {
+    fontSize: 16,
+    color: '#666',
+  },
+  cardsContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    gap: 20,
+  },
+  card: {
+    borderRadius: 20,
+    marginBottom: 20,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 20,
+    elevation: 5,
+    height: 160,
+  },
+  cardGradient: {
+    borderRadius: 20,
+    padding: 20,
+    height: '100%',
+    justifyContent: 'space-between',
+  },
+  cardContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  cardTextContainer: {
+    flex: 1,
+    marginLeft: 15,
+  },
+  iconContainer: {
+    width: 56,
+    height: 56,
+    borderRadius: 16,
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cardTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: 'white',
+    marginBottom: 5,
+  },
   cardDescription: {
     fontSize: 14,
-    color: '#666',
-    marginBottom: 16,
+    color: 'rgba(255, 255, 255, 0.85)',
     lineHeight: 20,
   },
-  featureRow: {
+  arrowContainer: {
+    padding: 10,
+  },
+  featureContainer: {
     flexDirection: 'row',
-    marginBottom: 16,
+    marginTop: 15,
   },
   feature: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginRight: 16,
+    marginRight: 20,
+    backgroundColor: 'rgba(255, 255, 255, 0.15)',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 12,
   },
   featureText: {
+    color: 'white',
+    marginLeft: 6,
     fontSize: 13,
-    color: '#666',
-    marginLeft: 4,
   },
-  button: {
-    paddingVertical: 12,
-    borderRadius: 12,
+  footer: {
+    padding: 20,
     alignItems: 'center',
   },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '600',
+  footerText: {
+    color: '#888',
+    fontSize: 14,
   },
 });
-
-export default quiz;

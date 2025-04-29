@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: '#F8F9FA',
+    paddingTop: 24,
   },
   container: {
     flex: 1,

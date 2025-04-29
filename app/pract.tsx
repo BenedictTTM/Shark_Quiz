@@ -1,14 +1,14 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Practice = () => {
+const pract = () => {
   return (
     <View>
       <Text>
-        practice
+        
       </Text>
     </View>
   )
 }
 
-export default Practice
+export default pract

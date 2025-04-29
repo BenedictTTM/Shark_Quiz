@@ -33,7 +33,7 @@ const store = () => {
 
   const handleBuyPack = (packId, price) => {
     if (userPoints >= price) {
-      setUserPoints(userPoints - price);
+      setUserPoints(userPoints + price);
       // Here you would add logic to unlock the question pack
       alert(`Successfully purchased pack #${packId}!`);
     } else {

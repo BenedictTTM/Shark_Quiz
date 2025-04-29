@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Tournament = () => {
+const tourn = () => {
   return (
     <View>
-      <Text>Tournament</Text>
+      <Text>tourn</Text>
     </View>
   )
 }
 
-export default Tournament
+export default tourn
