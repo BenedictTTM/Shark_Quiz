@@ -2,59 +2,54 @@
     "subject": "Biology",
     "questions": [
       {
-        "question": "What is the basic unit of life?",
-        "options": ["Organ", "Cell", "Tissue", "Organism"],
-        "answer": "Cell"
+        "question": "What part of the cell contains genetic material?",
+        "options": ["Mitochondria", "Nucleus", "Ribosome", "Cytoplasm"],
+        "answer": "Nucleus"
       },
       {
-        "question": "What organelle is known as the powerhouse of the cell?",
-        "options": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"],
-        "answer": "Mitochondrion"
+        "question": "Which system in the body is responsible for transporting blood?",
+        "options": ["Digestive system", "Respiratory system", "Circulatory system", "Nervous system"],
+        "answer": "Circulatory system"
       },
       {
-        "question": "Which molecule carries genetic information?",
-        "options": ["RNA", "ATP", "DNA", "Protein"],
-        "answer": "DNA"
+        "question": "Which kingdom does a mushroom belong to?",
+        "options": ["Animalia", "Plantae", "Fungi", "Protista"],
+        "answer": "Fungi"
       },
       {
-        "question": "What process do plants use to make their food?",
-        "options": ["Respiration", "Transpiration", "Photosynthesis", "Germination"],
-        "answer": "Photosynthesis"
+        "question": "Which blood cells help fight infection?",
+        "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+        "answer": "White blood cells"
       },
       {
-        "question": "What pigment gives plants their green color?",
-        "options": ["Chlorophyll", "Hemoglobin", "Keratin", "Melanin"],
-        "answer": "Chlorophyll"
+        "question": "What is the largest organ in the human body?",
+        "options": ["Liver", "Skin", "Heart", "Brain"],
+        "answer": "Skin"
       },
       {
-        "question": "What organ filters blood in the human body?",
-        "options": ["Liver", "Kidney", "Heart", "Lungs"],
-        "answer": "Kidney"
+        "question": "What gas do animals exhale that plants use?",
+        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "answer": "Carbon Dioxide"
       },
       {
-        "question": "How many bones are in the adult human body?",
-        "options": ["206", "205", "201", "212"],
-        "answer": "206"
+        "question": "What is the name of the process by which cells divide?",
+        "options": ["Meiosis", "Mitosis", "Fusion", "Osmosis"],
+        "answer": "Mitosis"
       },
       {
-        "question": "What is the function of red blood cells?",
-        "options": ["Fight infections", "Clot blood", "Carry oxygen", "Digest food"],
-        "answer": "Carry oxygen"
+        "question": "Which part of the brain controls balance and coordination?",
+        "options": ["Cerebrum", "Brainstem", "Cerebellum", "Hypothalamus"],
+        "answer": "Cerebellum"
       },
       {
-        "question": "Where does digestion begin in the human body?",
-        "options": ["Stomach", "Small intestine", "Mouth", "Esophagus"],
-        "answer": "Mouth"
+        "question": "Which macromolecule is primarily responsible for energy storage?",
+        "options": ["Proteins", "Nucleic acids", "Lipids", "Carbohydrates"],
+        "answer": "Lipids"
       },
       {
-        "question": "What is osmosis?",
-        "options": [
-          "Movement of oxygen through blood",
-          "Active transport of nutrients",
-          "Diffusion of water through a membrane",
-          "Breaking down of glucose"
-        ],
-        "answer": "Diffusion of water through a membrane"
+        "question": "Which structure in a plant cell stores water?",
+        "options": ["Chloroplast", "Nucleus", "Vacuole", "Cell wall"],
+        "answer": "Vacuole"
       }
     ]
   }
