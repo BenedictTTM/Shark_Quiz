@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#2a3242',
         borderRadius: 12,
         padding: 30,
-        width: '90%',
+        width: '91%',
         alignItems: 'center',
     },
     feedbackTitle: {
