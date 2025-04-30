@@ -5,6 +5,7 @@ import quizData from '../constants/quizMode.json';
 
 export default function QuizScreen() {
   const [selectedSet, setSelectedSet] = useState<string | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const quizSets = quizData.quizSets;
 
@@ -12,8 +13,8 @@ export default function QuizScreen() {
     setSelectedSet(set);
   };
 
-  const selectedQuestions = selectedSet
-    ? quizSets.find(q => q.set === selectedSet)?.questions || []
+  const selectedQuestion = selectedSet
+    ? quizSets.find(q => q.set === selectedSet)?.questions[currentIndex] || []
     : [];
 
   return (
@@ -31,18 +32,10 @@ export default function QuizScreen() {
       ) : (
         <>
           <Text style={{ fontSize: 20, marginBottom: 10 }}>Questions from Set {selectedSet}:</Text>
-          <FlatList
-            data={selectedQuestions}
-            keyExtractor={(item) => item.index.toString()}
-            renderItem={({ item }) => (
-              <View style={{ marginBottom: 20 }}>
-                <Text style={{ fontWeight: 'bold' }}>{item.index}. {item.question}</Text>
-                {item.answers.map((ans, idx) => (
-                  <Text key={idx} style={{ marginLeft: 10 }}>• {ans}</Text>
-                ))}
-              </View>
-            )}
-          />
+          <View>
+            <Text>{selectedQuestion.question}</Text>
+            <Text>{selectedQuestion.correctAnswer}</Text>
+          </View>
           <TouchableOpacity onPress={() => setSelectedSet(null)}>
             <Text style={{ color: 'blue', marginTop: 20 }}>← Back to Sets</Text>
           </TouchableOpacity>
