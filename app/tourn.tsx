@@ -4,7 +4,7 @@ import React from 'react'
 const tourn = () => {
   return (
     <View>
-      <Text>tourn</Text>
+      <Text>touirn</Text>
     </View>
   )
 }
