@@ -1,0 +1,65 @@
+{
+    "quiz": [
+      {
+        "set": "A",
+        "questions": [
+          { "index": 1, "difficulty": "Easy", "question": "What is the basic unit of life?", "answers": ["Atom", "Cell", "Tissue", "Organ"], "correctAnswer": "Cell" },
+          { "index": 2, "difficulty": "Easy", "question": "Which organ pumps blood throughout the body?", "answers": ["Lungs", "Liver", "Heart", "Kidney"], "correctAnswer": "Heart" },
+          { "index": 3, "difficulty": "Medium", "question": "What part of the brain controls balance?", "answers": ["Cerebrum", "Cerebellum", "Medulla", "Pons"], "correctAnswer": "Cerebellum" },
+          { "index": 4, "difficulty": "Medium", "question": "Which gas do plants absorb from the atmosphere?", "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"], "correctAnswer": "Carbon dioxide" },
+          { "index": 5, "difficulty": "Hard", "question": "Which structure in a cell contains genetic material?", "answers": ["Nucleus", "Cytoplasm", "Mitochondria", "Cell membrane"], "correctAnswer": "Nucleus" },
+          { "index": 6, "difficulty": "Hard", "question": "What pigment is responsible for photosynthesis?", "answers": ["Melanin", "Keratin", "Chlorophyll", "Myosin"], "correctAnswer": "Chlorophyll" },
+          { "index": 7, "difficulty": "Easy", "question": "What type of blood cells help fight infection?", "answers": ["Red", "White", "Platelets", "Plasma"], "correctAnswer": "White" },
+          { "index": 8, "difficulty": "Medium", "question": "Where does fertilization usually occur in humans?", "answers": ["Ovary", "Uterus", "Fallopian tube", "Vagina"], "correctAnswer": "Fallopian tube" },
+          { "index": 9, "difficulty": "Hard", "question": "Which molecule carries genetic instructions?", "answers": ["RNA", "DNA", "ATP", "Enzymes"], "correctAnswer": "DNA" },
+          { "index": 10, "difficulty": "Medium", "question": "Which part of a plant transports water?", "answers": ["Phloem", "Xylem", "Stomata", "Chloroplast"], "correctAnswer": "Xylem" }
+        ]
+      },
+      {
+        "set": "B",
+        "questions": [
+          { "index": 11, "difficulty": "Easy", "question": "How many chambers are there in the human heart?", "answers": ["2", "3", "4", "5"], "correctAnswer": "4" },
+          { "index": 12, "difficulty": "Easy", "question": "Which organ removes waste from the blood?", "answers": ["Liver", "Kidney", "Heart", "Pancreas"], "correctAnswer": "Kidney" },
+          { "index": 13, "difficulty": "Medium", "question": "What part of the eye controls the amount of light that enters?", "answers": ["Pupil", "Iris", "Lens", "Cornea"], "correctAnswer": "Iris" },
+          { "index": 14, "difficulty": "Medium", "question": "What is the function of hemoglobin?", "answers": ["Digest fats", "Carry oxygen", "Regulate temperature", "Fight viruses"], "correctAnswer": "Carry oxygen" },
+          { "index": 15, "difficulty": "Hard", "question": "What organelle packages proteins for transport?", "answers": ["Ribosome", "Mitochondria", "Golgi apparatus", "Nucleus"], "correctAnswer": "Golgi apparatus" },
+          { "index": 16, "difficulty": "Hard", "question": "Which process produces gametes in humans?", "answers": ["Mitosis", "Fertilization", "Meiosis", "Cloning"], "correctAnswer": "Meiosis" },
+          { "index": 17, "difficulty": "Easy", "question": "Which vitamin is produced when the skin is exposed to sunlight?", "answers": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin B12"], "correctAnswer": "Vitamin D" },
+          { "index": 18, "difficulty": "Medium", "question": "Which part of the brain regulates heartbeat and breathing?", "answers": ["Cerebrum", "Cerebellum", "Medulla oblongata", "Thalamus"], "correctAnswer": "Medulla oblongata" },
+          { "index": 19, "difficulty": "Hard", "question": "Which type of RNA carries amino acids?", "answers": ["mRNA", "rRNA", "tRNA", "snRNA"], "correctAnswer": "tRNA" },
+          { "index": 20, "difficulty": "Medium", "question": "Which part of the kidney filters blood?", "answers": ["Glomerulus", "Ureter", "Pelvis", "Calyx"], "correctAnswer": "Glomerulus" }
+        ]
+      },
+      {
+        "set": "C",
+        "questions": [
+          { "index": 21, "difficulty": "Easy", "question": "What do we call animals that eat only plants?", "answers": ["Carnivores", "Omnivores", "Herbivores", "Scavengers"], "correctAnswer": "Herbivores" },
+          { "index": 22, "difficulty": "Easy", "question": "Which organ helps with breathing?", "answers": ["Liver", "Lungs", "Kidneys", "Stomach"], "correctAnswer": "Lungs" },
+          { "index": 23, "difficulty": "Medium", "question": "What is the function of the ribosome?", "answers": ["Produce energy", "Digest food", "Make proteins", "Store DNA"], "correctAnswer": "Make proteins" },
+          { "index": 24, "difficulty": "Medium", "question": "Which type of muscle is found in the heart?", "answers": ["Skeletal", "Smooth", "Cardiac", "Voluntary"], "correctAnswer": "Cardiac" },
+          { "index": 25, "difficulty": "Hard", "question": "What is the name of the process by which plants lose water vapor?", "answers": ["Transpiration", "Evaporation", "Condensation", "Photosynthesis"], "correctAnswer": "Transpiration" },
+          { "index": 26, "difficulty": "Hard", "question": "What is the role of lysosomes in the cell?", "answers": ["Protein synthesis", "Energy production", "Waste digestion", "Photosynthesis"], "correctAnswer": "Waste digestion" },
+          { "index": 27, "difficulty": "Easy", "question": "What kind of joint is in the shoulder?", "answers": ["Hinge", "Ball and socket", "Pivot", "Fixed"], "correctAnswer": "Ball and socket" },
+          { "index": 28, "difficulty": "Medium", "question": "Which gland produces insulin?", "answers": ["Pituitary", "Thyroid", "Pancreas", "Adrenal"], "correctAnswer": "Pancreas" },
+          { "index": 29, "difficulty": "Hard", "question": "What is the name for the movement of water across a membrane?", "answers": ["Diffusion", "Osmosis", "Filtration", "Active transport"], "correctAnswer": "Osmosis" },
+          { "index": 30, "difficulty": "Medium", "question": "What do white blood cells do?", "answers": ["Transport oxygen", "Digest food", "Fight infections", "Clot blood"], "correctAnswer": "Fight infections" }
+        ]
+      },
+      {
+        "set": "D",
+        "questions": [
+          { "index": 31, "difficulty": "Easy", "question": "What organ protects the body from germs?", "answers": ["Liver", "Skin", "Lung", "Brain"], "correctAnswer": "Skin" },
+          { "index": 32, "difficulty": "Easy", "question": "Which sense organ detects sound?", "answers": ["Eye", "Ear", "Nose", "Skin"], "correctAnswer": "Ear" },
+          { "index": 33, "difficulty": "Medium", "question": "Which blood vessels carry blood away from the heart?", "answers": ["Veins", "Arteries", "Capillaries", "Nerves"], "correctAnswer": "Arteries" },
+          { "index": 34, "difficulty": "Medium", "question": "What is the role of platelets?", "answers": ["Digest food", "Clot blood", "Fight bacteria", "Produce hormones"], "correctAnswer": "Clot blood" },
+          { "index": 35, "difficulty": "Hard", "question": "Which part of the brain is responsible for memory?", "answers": ["Cerebellum", "Medulla", "Hippocampus", "Pons"], "correctAnswer": "Hippocampus" },
+          { "index": 36, "difficulty": "Hard", "question": "Which chemical is used to test for starch?", "answers": ["Benedict’s solution", "Biuret", "Iodine", "Ethanol"], "correctAnswer": "Iodine" },
+          { "index": 37, "difficulty": "Easy", "question": "Which organ helps in digestion and produces bile?", "answers": ["Pancreas", "Liver", "Kidney", "Spleen"], "correctAnswer": "Liver" },
+          { "index": 38, "difficulty": "Medium", "question": "How many bones are in the adult human body?", "answers": ["206", "201", "210", "199"], "correctAnswer": "206" },
+          { "index": 39, "difficulty": "Hard", "question": "Which system controls body functions through hormones?", "answers": ["Nervous", "Digestive", "Endocrine", "Respiratory"], "correctAnswer": "Endocrine" },
+          { "index": 40, "difficulty": "Medium", "question": "What type of cell division produces two identical daughter cells?", "answers": ["Meiosis", "Fission", "Mitosis", "Fusion"], "correctAnswer": "Mitosis" }
+        ]
+      }
+    ]
+  }
+  
