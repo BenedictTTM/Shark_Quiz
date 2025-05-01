@@ -11,8 +11,8 @@ import {
   Alert
 } from 'react-native';
 import quizData from '../constants/quizMode.json';
-import FinalQuizScore from './finalQuizScore';
-import ResultsScreen from './finalresultsScreen';
+import FinalQuizScore from './ScorePage/finalQuizScore';
+import ResultsScreen from './ScorePage/finalresultsScreen';
 import HeaderProgressAndScore from './headerProgressAndScore';
 
 export default function QuizScreen() {
@@ -118,34 +118,32 @@ export default function QuizScreen() {
         {/* Set Selection Screen */}
         {!selectedSet ? (
           <View>
-            <LinearGradient
-              colors={['#1a1e2a', '#121420']}
-              style={StyleSheet.absoluteFill}
-            />
-            <Text style={styles.title}>Select a Quiz Set</Text>
-            <View style={styles.setsContainer}>
-              {quizSets.map((set, index) => (
-                <TouchableOpacity
-                  key={set.set}
-                  style={[
-                    styles.setButton,
-                    {
-                      left: 0,
-                      top: 0,
-                      backgroundColor: selectedSet === set.set ? '#34d399' : '#2a3042',
-                      transform: [{ scale: selectedSet === set.set ? 1.1 : 1 }]
-                    }
-                  ]}
-                  onPress={() => handleSelectSet(set.set)}
-                >
-                  <Text style={[styles.setButtonText, { color: selectedSet === set.set ? '#121420' : '#ffffff' }]}>Set {set.set}</Text>
-                  <Text style={[styles.setDescription, { color: selectedSet === set.set ? '#121420' : '#a0aec0' }]}>
+          <Text style={styles.title}>Select a Quiz Set</Text>
+          <View style={styles.setsContainer}>
+            {quizSets.map((set, index) => (
+              <TouchableOpacity
+                key={set.set}
+                style={styles.card}
+                onPress={() => handleSelectSet(set.set)}
+              >
+                <View style={styles.iconContainer}>
+                  {/* Replace this with an actual icon/image if needed */}
+                  <Text style={styles.iconText}>📊</Text>
+                </View>
+        
+                <View style={styles.textContainer}>
+                  <Text style={styles.cardTitle}>{set.title || `Set ${set.set}`}</Text>
+                  <Text style={styles.cardSubtitle}>
                     {set.description || `${set.questions.length} questions`}
                   </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
+                </View>
+        
+                <Text style={styles.arrow}>›</Text>
+              </TouchableOpacity>
+            ))}
           </View>
+        </View>
+        
         ) : !completed ? (
           /* Quiz Screen */
           <View style={styles.quizContainer}>
@@ -153,7 +151,7 @@ export default function QuizScreen() {
               colors={['#1a1e2a', '#121420']}
               style={StyleSheet.absoluteFill}
             />
-            <HeaderProgressAndScore selectedSet={selectedSet} score={score} totalQuestions={totalQuestions} currentIndex={currentIndex} currentQuestion={currentQuestion}/>
+            <HeaderProgressAndScore score={score} totalQuestions={totalQuestions} currentIndex={currentIndex} currentQuestion={currentQuestion}/>
             <View style={styles.answersContainer}>
               {possibleAnswers.map((answer, index) => (
                 <TouchableOpacity
@@ -242,30 +240,54 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 0, height: 2 },
     textShadowRadius: 4,
   },
-  setsContainer: {
-    width: '100%',
-    height: 400,
-    position: 'relative',
-  },
-  setButton: {
-    position: 'absolute',
-    width: 150,
-    padding: 15,
-    borderRadius: 18,
-    elevation: 5,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-  },
-  setButtonText: {
-    fontSize: 18,
+  ButtonTitle: {
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 4,
+    marginBottom: 12,
+    color: '#121420',
+    paddingHorizontal: 16,
   },
-  setDescription: {
+  setsContainer: {
+    gap: 12,
+    paddingHorizontal: 16,
+  },
+  card: {
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    elevation: 4, // Android shadow
+    shadowColor: '#000', // iOS shadow
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 2 },
+  },
+  iconContainer: {
+    backgroundColor: '#e0e7ff',
+    borderRadius: 12,
+    padding: 12,
+    marginRight: 12,
+  },
+  iconText: {
+    fontSize: 18,
+  },
+  textContainer: {
+    flex: 1,
+  },
+  cardTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#1a202c',
+  },
+  cardSubtitle: {
     fontSize: 13,
-    lineHeight: 18,
+    color: '#718096',
+    marginTop: 2,
+  },
+  arrow: {
+    fontSize: 24,
+    color: '#a0aec0',
   },
   quizContainer: {
     flex: 1,

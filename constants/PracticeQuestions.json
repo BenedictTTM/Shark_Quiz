@@ -1,0 +1,79 @@
+{
+    "quizSets": [
+      {
+        "set": "Maths",
+        "questions": [
+          { "index": 1, "difficulty": "Medium", "question": "What is the derivative of eˣ + ln(x)?", "answers": ["eˣ + 1/x", "eˣ - 1/x", "xeˣ⁻¹ + 1/x", "eˣ + x"], "correctAnswer": "eˣ + 1/x" },
+          { "index": 2, "difficulty": "Hard", "question": "If a matrix A is invertible, what must be true about its determinant?", "answers": ["det(A) = 0", "det(A) ≠ 0", "det(A) = 1", "det(A) > 0"], "correctAnswer": "det(A) ≠ 0" },
+          { "index": 3, "difficulty": "Hard", "question": "What is the solution to the differential equation dy/dx = 2y?", "answers": ["y = Ce²ˣ", "y = Csin(2x)", "y = Ceˣ²", "y = Cx²"], "correctAnswer": "y = Ce²ˣ" },
+          { "index": 4, "difficulty": "Medium", "question": "In modular arithmetic, what is 7 ≡ x mod 3?", "answers": ["0", "1", "2", "3"], "correctAnswer": "1" },
+          { "index": 5, "difficulty": "Hard", "question": "Which theorem states that every even integer greater than 2 can be expressed as the sum of two primes?", "answers": ["Fermat's Last Theorem", "Goldbach's Conjecture", "Pythagorean Theorem", "Euclid's Theorem"], "correctAnswer": "Goldbach's Conjecture" },
+          { "index": 6, "difficulty": "Hard", "question": "What is the value of iⁱ (where i is the imaginary unit)?", "answers": ["e^(-π/2)", "0", "π", "Undefined"], "correctAnswer": "e^(-π/2)" },
+          { "index": 7, "difficulty": "Medium", "question": "In probability, what distribution describes the number of successes in n independent Bernoulli trials?", "answers": ["Poisson", "Normal", "Binomial", "Exponential"], "correctAnswer": "Binomial" },
+          { "index": 8, "difficulty": "Hard", "question": "What is the rank of a 3×3 identity matrix?", "answers": ["0", "1", "2", "3"], "correctAnswer": "3" },
+          { "index": 9, "difficulty": "Medium", "question": "Which of these is NOT a tautology in propositional logic?", "answers": ["P ∨ ¬P", "P → P", "P ∧ ¬P", "(P → Q) ∨ (Q → P)"], "correctAnswer": "P ∧ ¬P" },
+          { "index": 10, "difficulty": "Hard", "question": "In group theory, what is the order of the alternating group A₄?", "answers": ["6", "12", "24", "Infinite"], "correctAnswer": "12" }
+        ]
+      },
+      {
+        "set": "Science",
+        "questions": [
+          { "index": 11, "difficulty": "Hard", "question": "Which quantum number describes the shape of an atomic orbital?", "answers": ["Principal", "Azimuthal", "Magnetic", "Spin"], "correctAnswer": "Azimuthal" },
+          { "index": 12, "difficulty": "Hard", "question": "In special relativity, what phenomenon occurs as an object approaches the speed of light?", "answers": ["Mass decreases", "Length contracts", "Time speeds up", "Charge reverses"], "correctAnswer": "Length contracts" },
+          { "index": 13, "difficulty": "Medium", "question": "Which enzyme is responsible for unwinding DNA during replication?", "answers": ["DNA polymerase", "Helicase", "Ligase", "Primase"], "correctAnswer": "Helicase" },
+          { "index": 14, "difficulty": "Hard", "question": "What is the approximate energy (in eV) of a photon of green light (λ ≈ 500nm)?", "answers": ["1.24 eV", "2.48 eV", "3.72 eV", "4.96 eV"], "correctAnswer": "2.48 eV" },
+          { "index": 15, "difficulty": "Hard", "question": "Which thermodynamic law states that absolute zero cannot be reached?", "answers": ["Zeroth", "First", "Second", "Third"], "correctAnswer": "Third" },
+          { "index": 16, "difficulty": "Medium", "question": "In the Standard Model, what particle mediates the strong nuclear force?", "answers": ["Photon", "Gluon", "W boson", "Graviton"], "correctAnswer": "Gluon" },
+          { "index": 17, "difficulty": "Hard", "question": "Which brain structure is primarily involved in forming long-term memories?", "answers": ["Amygdala", "Hippocampus", "Cerebellum", "Thalamus"], "correctAnswer": "Hippocampus" },
+          { "index": 18, "difficulty": "Medium", "question": "What type of chemical bond exists between water molecules?", "answers": ["Ionic", "Covalent", "Hydrogen", "Metallic"], "correctAnswer": "Hydrogen" },
+          { "index": 19, "difficulty": "Hard", "question": "Which theorem relates the circulation of a vector field to its curl?", "answers": ["Divergence", "Stokes'", "Green's", "Gauss'"], "correctAnswer": "Stokes'" },
+          { "index": 20, "difficulty": "Hard", "question": "What is the oxidation state of chromium in K₂Cr₂O₇?", "answers": ["+2", "+3", "+6", "+7"], "correctAnswer": "+6" }
+        ]
+      },
+      {
+        "set": "Social Science",
+        "questions": [
+          { "index": 21, "difficulty": "Hard", "question": "Who proposed the 'veil of ignorance' concept in justice theory?", "answers": ["John Rawls", "Karl Marx", "Adam Smith", "John Locke"], "correctAnswer": "John Rawls" },
+          { "index": 22, "difficulty": "Medium", "question": "Which economist introduced the concept of 'creative destruction'?", "answers": ["Keynes", "Schumpeter", "Friedman", "Hayek"], "correctAnswer": "Schumpeter" },
+          { "index": 23, "difficulty": "Hard", "question": "The Treaty of Westphalia (1648) is considered foundational for what international system?", "answers": ["Colonialism", "Sovereign states", "Communism", "Globalization"], "correctAnswer": "Sovereign states" },
+          { "index": 24, "difficulty": "Medium", "question": "Which psychological concept did Stanley Milgram's obedience experiments investigate?", "answers": ["Conformity", "Authority", "Altruism", "Cognitive dissonance"], "correctAnswer": "Authority" },
+          { "index": 25, "difficulty": "Hard", "question": "What term describes GDP adjusted for purchasing power parity?", "answers": ["Nominal GDP", "Real GDP", "GDP per capita", "GDP (PPP)"], "correctAnswer": "GDP (PPP)" },
+          { "index": 26, "difficulty": "Hard", "question": "Which philosopher wrote 'The Social Contract'?", "answers": ["Voltaire", "Montesquieu", "Rousseau", "Diderot"], "correctAnswer": "Rousseau" },
+          { "index": 27, "difficulty": "Medium", "question": "The 'tragedy of the commons' refers to problems with what type of goods?", "answers": ["Private", "Public", "Common-pool", "Club"], "correctAnswer": "Common-pool" },
+          { "index": 28, "difficulty": "Hard", "question": "Which ancient civilization developed the concept of zero independently of India?", "answers": ["Egyptian", "Mayan", "Roman", "Greek"], "correctAnswer": "Mayan" },
+          { "index": 29, "difficulty": "Medium", "question": "What term describes the blending of global and local cultural elements?", "answers": ["Globalization", "Assimilation", "Glocalization", "Acculturation"], "correctAnswer": "Glocalization" },
+          { "index": 30, "difficulty": "Hard", "question": "Which theory argues that states pursue power to ensure survival in an anarchic system?", "answers": ["Liberalism", "Constructivism", "Realism", "Marxism"], "correctAnswer": "Realism" }
+        ]
+      },
+      {
+        "set": "English",
+        "questions": [
+          { "index": 31, "difficulty": "Hard", "question": "Which literary device is exemplified by 'The pen is mightier than the sword'?", "answers": ["Metonymy", "Synecdoche", "Litotes", "Zeugma"], "correctAnswer": "Metonymy" },
+          { "index": 32, "difficulty": "Medium", "question": "Who wrote 'The Waste Land'?", "answers": ["Ezra Pound", "W.B. Yeats", "T.S. Eliot", "Wallace Stevens"], "correctAnswer": "T.S. Eliot" },
+          { "index": 33, "difficulty": "Hard", "question": "What term describes a novel that follows a character's psychological development?", "answers": ["Künstlerroman", "Bildungsroman", "Roman à clef", "Epistolary"], "correctAnswer": "Bildungsroman" },
+          { "index": 34, "difficulty": "Medium", "question": "In Old English, what case marks the direct object of a verb?", "answers": ["Nominative", "Genitive", "Dative", "Accusative"], "correctAnswer": "Accusative" },
+          { "index": 35, "difficulty": "Hard", "question": "Which work features the line 'To be or not to be'?", "answers": ["Macbeth", "King Lear", "Hamlet", "Othello"], "correctAnswer": "Hamlet" },
+          { "index": 36, "difficulty": "Hard", "question": "What literary movement emphasized emotion and individualism in the late 18th century?", "answers": ["Realism", "Romanticism", "Modernism", "Naturalism"], "correctAnswer": "Romanticism" },
+          { "index": 37, "difficulty": "Medium", "question": "Which poet wrote 'Do not go gentle into that good night'?", "answers": ["W.H. Auden", "Dylan Thomas", "Philip Larkin", "Ted Hughes"], "correctAnswer": "Dylan Thomas" },
+          { "index": 38, "difficulty": "Hard", "question": "What is the term for an unreliable narrator who is aware of their unreliability?", "answers": ["Naive", "Self-conscious", "Fallible", "Unreliable"], "correctAnswer": "Self-conscious" },
+          { "index": 39, "difficulty": "Medium", "question": "Which novel begins 'It was the best of times, it was the worst of times'?", "answers": ["Moby Dick", "Great Expectations", "A Tale of Two Cities", "Jane Eyre"], "correctAnswer": "A Tale of Two Cities" },
+          { "index": 40, "difficulty": "Hard", "question": "What rhetorical device repeats a word at the start of successive clauses?", "answers": ["Anaphora", "Epistrophe", "Chiasmus", "Asyndeton"], "correctAnswer": "Anaphora" }
+        ]
+      },
+      {
+        "set": "General Knowledge",
+        "questions": [
+          { "index": 41, "difficulty": "Hard", "question": "Which country has the most time zones?", "answers": ["USA", "Russia", "France", "China"], "correctAnswer": "France" },
+          { "index": 42, "difficulty": "Medium", "question": "What is the rarest blood type in humans?", "answers": ["AB-", "O-", "B-", "AB+"], "correctAnswer": "AB-" },
+          { "index": 43, "difficulty": "Hard", "question": "Which element has the highest melting point?", "answers": ["Tungsten", "Carbon", "Osmium", "Rhenium"], "correctAnswer": "Carbon" },
+          { "index": 44, "difficulty": "Medium", "question": "What chess piece can only move diagonally?", "answers": ["Rook", "Knight", "Bishop", "Queen"], "correctAnswer": "Bishop" },
+          { "index": 45, "difficulty": "Hard", "question": "Which country invented tea as a beverage?", "answers": ["India", "Japan", "China", "England"], "correctAnswer": "China" },
+          { "index": 46, "difficulty": "Hard", "question": "What is the only mammal capable of true flight?", "answers": ["Flying squirrel", "Bat", "Colugo", "Sugar glider"], "correctAnswer": "Bat" },
+          { "index": 47, "difficulty": "Medium", "question": "Which planet has the most moons?", "answers": ["Jupiter", "Saturn", "Uranus", "Neptune"], "correctAnswer": "Saturn" },
+          { "index": 48, "difficulty": "Hard", "question": "What is the world's longest river by discharge volume?", "answers": ["Nile", "Amazon", "Yangtze", "Mississippi"], "correctAnswer": "Amazon" },
+          { "index": 49, "difficulty": "Medium", "question": "Which language has the most native speakers?", "answers": ["English", "Spanish", "Hindi", "Mandarin"], "correctAnswer": "Mandarin" },
+          { "index": 50, "difficulty": "Hard", "question": "What is the capital of Bhutan?", "answers": ["Kathmandu", "Thimphu", "Dhaka", "Male"], "correctAnswer": "Thimphu" }
+        ]
+      }
+    ]
+  }

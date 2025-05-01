@@ -1,7 +1,7 @@
 import { View, Text , StyleSheet } from 'react-native'
 import React from 'react'
 
-const headerProgressAndScore = ({ selectedSet, score, totalQuestions, currentIndex, currentQuestion }) => {
+const headerProgressAndScore = ({  score, totalQuestions, currentIndex, currentQuestion }) => {
   return (
     <View>
       <View style={styles.progressContainer}>
@@ -14,7 +14,7 @@ const headerProgressAndScore = ({ selectedSet, score, totalQuestions, currentInd
       </View>
       
       <View style={styles.headerContainer}>
-        <Text style={styles.setTitle}>Set {selectedSet}</Text>
+       
         <Text style={styles.scoreText}>Score: {score}/{totalQuestions}</Text>
       </View>
       
